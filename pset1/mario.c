@@ -37,14 +37,14 @@ int main(void){                                         // start main function
 }
 
 int hash(int count){                                    // declare a function: "hash"
-  for(int x = count; x > 0; x--){                       // starting at "count", decrement to "0"
+  for(int x = count; height - x >= 0; x++){             // count up to the difference between number of lines run and orignal value
     printf("#");                                        // print "#"
   }
   return 0;
 }
 
 int space(int count, int height){                       // declare a function: "space"
-  for(int x = count; height - x > 0; x++){              // count up to the difference between number of lines run and orignal value
+  for(int x = count; x > 0; x--){                       // starting at "count", decrement to "0"
     printf(" ");                                        // print " "
   }
   return 0;
